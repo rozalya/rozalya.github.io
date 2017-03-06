@@ -22,12 +22,23 @@ nav{
 
 }
 
-nav ul li:first-of-type::before{
-    content: url("img/logo.png");
-    position: absolute;
-    left: 10px;
-     top:0px;
+h1{
+    position: relative;
+    right: 703px;
+    top: 32px;
+    font-size: 39px;
+    color: #8FA0B1;
 }
+p{
+    width: 30px;
+    position: fixed;
+    left: 334px;
+    font-size: 85px;
+    top: 23px;
+    color: #FFA000;
+}
+
+
 
 nav ul li{
 
