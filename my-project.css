@@ -1,41 +1,58 @@
+@import url('http://fonts.googleapis.com/css?family=Dosis:300,600');
 @font-face {
-    font-family: waltographUI;
-    src: url("font/waltographUI.ttf");
+    font-family: JELLYBELLY;
+    src: url("font/JELLYBELLY.TTF");
 }
+
+
 
 body{
-
-
+    margin: 0;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+            url("img/web-design-concept-with-drawings_1134-77.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 35%;
 }
+
+
 
 main{
     width: 100%;
-    font-family: waltographUI, serif;
+    font-family: 'Dosis', serif;
     position: relative;
 
 }
 
 nav{
-    background-color: #234465;
-    color: #8FA0B1;
+    /*background-color: #234465;*/
+    /*color: #8FA0B1;*/
     text-align: right;
 
 }
 
 h1{
+    font-family: JELLYBELLY, serif;
     position: relative;
-    right: 703px;
+    right: 536px;
+    /* font-weight: 900; */
     top: 32px;
-    font-size: 39px;
-    color: #8FA0B1;
+    font-size: 74px;
+    text-transform: uppercase;
+    color: rgba(232, 113, 217, 0.79);
+    text-shadow: black 0.1em 0.1em 0.2em;
+
 }
+
 p{
     width: 30px;
     position: fixed;
     left: 334px;
     font-size: 85px;
     top: 23px;
-    color: #FFA000;
+    color: lightpink;
 }
 
 
@@ -51,7 +68,18 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    font-family: waltographUI, serif;
-    color: #FFA000;
+    font-family: JELLYBELLY, serif;
+    font-size: 3em;
+    color: rgba(232, 113, 217, 0.79);
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+
+}
+
+nav ul li a:hover {
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
