@@ -40,7 +40,7 @@ main{
     margin: 0 auto;
     padding-left: 0;
     overflow: hidden;
-    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.2);
+
     transition: all 0.7s;
 }
 .caption {
@@ -178,9 +178,8 @@ p{
     border-style: double;
     border-radius: 50%;
     bottom: -110px;
-    color: rgba(244, 109, 125, 0.80);
-    text-shadow: black 0.1em 0.1em 0.2em;
-
+   color: rgba(239, 10, 37, 0.78);
+    text-shadow: rgb(0, 0, 0) 0.1em;
 
 }
 nav ul li{
@@ -198,7 +197,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    font-family: JELLYBELLY, serif;
+    font-family: JELLYBELLY,serif;
     font-size: 3em;
     color: rgba(244, 109, 125, 0.80);
     text-shadow: black 0.1em 0.1em 0.2em;
