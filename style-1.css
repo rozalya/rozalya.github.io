@@ -1,0 +1,36 @@
+@import url('http://fonts.googleapis.com/css?family=Dosis:300,600');
+@font-face {
+    font-family: JELLYBELLY;
+    src: url("font/JELLYBELLY.TTF");
+}
+
+@font-face {
+    font-family: Punktype;
+    src: url("font/Punktype.ttf");
+}
+
+body{
+    margin: 0;
+    background: url("img/6845.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 50% 85%;
+}
+
+.pics{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+#pics img{
+    width: 53%;
+    height: auto;
+}

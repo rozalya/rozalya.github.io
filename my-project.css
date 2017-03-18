@@ -4,17 +4,18 @@
     src: url("font/JELLYBELLY.TTF");
 }
 
+@font-face {
+    font-family: Punktype;
+    src: url("font/Punktype.ttf");
+}
 
 
 body{
     margin: 0;
-    background-image: linear-gradient(
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.5)),
-            url("img/web-design-concept-with-drawings_1134-77.jpg");
+    background-image:url("img/web-design-concept-with-drawings_1134-77.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 40% 35%;
+    background-position: 50% 85%;
 }
 
 
@@ -26,41 +27,170 @@ main{
 
 }
 
-nav{
-    /*background-color: #234465;*/
-    /*color: #8FA0B1;*/
-    text-align: right;
-
+.box:before, .menu, .caption {
+    position: absolute;
 }
 
-h1{
+.box {
+    position: relative;
+    box-sizing: border-box;
+    width: 750px;
+    height: 577px;
+    right: 700px;
+    margin: 0 auto;
+    padding-left: 0;
+    overflow: hidden;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.7s;
+}
+.caption {
+background: linear-gradient(
+rgba(246, 245, 243, 0.7),
+rgba(246, 245, 243, 0.7));
+    height: 100%;
+    padding: 15px 20px 0 0;
+}
+ul {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding-left: 13px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+ul li a {
+    margin-top: 0;
+    color: #000;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+
+ul li a {
+    transition: all 0.3s;
+}
+ul li a:hover {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+
+
+.box:before {
+    content: 'top running collections';
+    color: #000;
+    top: 13px;
+    right: 13px;
+    padding: 10px;
+    background: white;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.45s;
+
+}
+.box:hover {
+    padding-left: 400px;
+}
+.box:hover:before {
+    right: -300px;
+}
+.caption{
+    /*background-color: aquamarine;*/
+    height: 600px;
+    padding-bottom: 30%;
+}
+
+
+
+
+h1 a{
+    display: block;
+    text-decoration: none;
     font-family: JELLYBELLY, serif;
     position: relative;
-    right: 536px;
-    /* font-weight: 900; */
-    top: 32px;
-    font-size: 74px;
+    padding: 10px;
+    line-height: 50px;
+    margin-left: 60px;
+    margin-bottom: 100px;
+    top: 40px;
+    font-size: 55px;
     text-transform: uppercase;
-    color: rgba(232, 113, 217, 0.79);
+    color: rgba(171, 212, 244, 0.79);
     text-shadow: black 0.1em 0.1em 0.2em;
 
 }
 
-p{
-    width: 30px;
-    position: fixed;
-    left: 334px;
-    font-size: 85px;
-    top: 23px;
-    color: lightpink;
+
+/*Grow Rotate*/
+
+
+/* Pulse Grow */
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+p{
+    font-family: Punktype;
+    width: 62px;
+    position: fixed;
+    left: 306px;
+    font-size: 220px;
+    border: double;
+    width: 500px;
+    padding: 31px;
+    border-width: 40px;
+    border-style: double;
+    border-radius: 50%;
+    bottom: -110px;
+    color: rgba(244, 109, 125, 0.80);
+    text-shadow: black 0.1em 0.1em 0.2em;
 
 
+}
 nav ul li{
 
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
+    line-height: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+
 
 
 }
@@ -70,16 +200,90 @@ nav ul li a{
     text-transform: uppercase;
     font-family: JELLYBELLY, serif;
     font-size: 3em;
-    color: rgba(232, 113, 217, 0.79);
+    color: rgba(244, 109, 125, 0.80);
     text-shadow: black 0.1em 0.1em 0.2em;
 
 
 }
 
-nav ul li a:hover {
 
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* Wobble Top */
+@-webkit-keyframes hvr-wobble-top {
+16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+}
+33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
 
 }
+49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+}
+66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+}
+83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+}
+100% {
+    -webkit-transform: skew(0deg);
+    transform: skew(0deg);
+}
+}
+@keyframes hvr-wobble-top {
+
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    49.95% {
+
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+    100% {
+        -webkit-transform: skew(0deg);
+        transform: skew(0deg);
+    }
+}
+.hvr-wobble-top {
+    display: inline-block;
+
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active {
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+
