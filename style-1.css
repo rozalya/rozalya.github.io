@@ -1,7 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Dosis:300,600');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
 @font-face {
     font-family: JELLYBELLY;
     src: url("font/JELLYBELLY.TTF");
+}
+@font-face {
+    font-family: Wagnasty;
+    src: url("font/Wagnasty.ttf");
 }
 
 @font-face {
@@ -20,17 +25,24 @@ body{
 }
 #top{
     position: fixed;
-
-    font-family: Punktype;
+    font-family: JELLYBELLY;
     font-size: 2em;
-    left: 1030px;
+    left: 924px;
+    padding: 0 27px;
+    background: linear-gradient(
+            rgba(246, 245, 243, 0.7),
+            rgba(246, 245, 243, 0.7));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 }
 
 #top a{
     text-decoration: none;
-    color: rgba(239, 10, 37, 0.78);
+    font-family: JELLYBELLY,serif;
+    font-size: 2.2em;
+    color: rgba(244, 109, 125, 0.80);
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 .navMenu{
     text-decoration: none;
@@ -41,11 +53,11 @@ body{
 }
 
 .pics{
-    padding-left: 13%;
+    padding-left: 2%;
     padding-top: 5%;
     padding-bottom: 5%;
     justify-content: center;
-    margin: -51% 23%;
+    margin: -51% 29%;
     border: 2px solid rgba(123, 116, 116, 0.6);
       display: block;
     background-color: rgba(152, 145, 145, 0.39);
@@ -53,7 +65,7 @@ body{
 }
 figcaption{
     background-color: #fff;
-    width: 63%;
+    width: 93%;
     padding: 6% 0;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -66,14 +78,26 @@ figcaption{
     justify-content: center;
     margin-bottom: 10%;
     flex-direction: column;
+    padding-right: 5%;
 
 }
 
 .pics .container img{
     border: 6px solid darkgrey;
     border-style: ridge;
-    width: 61%;
+    width: 91%;
     height: 60%;
+}
+
+.pics .container p{
+    font-family: cursive;
+    text-align: left;
+    background: linear-gradient(
+            rgba(246, 245, 243, 0.7),
+            rgba(246, 245, 243, 0.7));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3%;
+
 }
 
 ------------------

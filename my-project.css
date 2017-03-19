@@ -81,16 +81,22 @@ ul li a:hover {
 
 
 .box:before {
-    content: 'top running collections';
-    color: #000;
-    top: 13px;
-    right: 13px;
-    padding: 10px;
-    background: white;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    font-weight: 600;
+    content: 'menu';
     text-transform: uppercase;
+    font-family: JELLYBELLY,serif;
+    color: rgba(244, 109, 125, 0.80);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    top: 13px;
+    right: 91px;
+    padding: 10px;
+    background: linear-gradient(
+            rgba(246, 245, 243, 0.7),
+            rgba(246, 245, 243, 0.7));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 2px;
+    font-family: JELLYBELLY;
+    font-size: 4rem;
+    font-weight: 600;
     transition: all 0.45s;
 
 }
@@ -178,8 +184,9 @@ p{
     border-style: double;
     border-radius: 50%;
     bottom: -110px;
-   color: rgba(239, 10, 37, 0.78);
-    text-shadow: rgb(0, 0, 0) 0.1em;
+    text-transform: uppercase;
+    color: rgba(244, 109, 125, 0.80);
+    text-shadow: black 0.1em 0.1em 0.2em;
 
 }
 nav ul li{
