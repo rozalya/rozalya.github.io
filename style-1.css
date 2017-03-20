@@ -24,15 +24,15 @@ body{
     background-size: cover;
 }
 #top{
+    right: 0%;
     position: fixed;
     font-family: JELLYBELLY;
     font-size: 2em;
-    left: 924px;
-    padding: 0 27px;
+    padding: 0 16px;
     background: linear-gradient(
-            rgba(246, 245, 243, 0.7),
-            rgba(246, 245, 243, 0.7));
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            rgba(246, 185, 174, 0.7),
+            rgba(183, 248, 255, 0.7));
+    box-shadow: 1px 24px 43px #333;
 
 
 }
@@ -44,6 +44,7 @@ body{
     color: rgba(244, 109, 125, 0.80);
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
 .navMenu{
     text-decoration: none;
     font-family: Punktype;
@@ -63,14 +64,14 @@ body{
     background-color: rgba(152, 145, 145, 0.39);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-figcaption{
-    background-color: #fff;
-    width: 93%;
-    padding: 6% 0;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: Punktype;
+.text{
+    background-color: #FFFFFF;
+    font-family: cursive;
+    padding: 2%;
+    box-shadow: 1px 24px 43px #333;
+    font-size: 1em;
 }
+
 
 
 .container{
@@ -85,10 +86,23 @@ figcaption{
 .pics .container img{
     border: 6px solid darkgrey;
     border-style: ridge;
-    width: 91%;
-    height: 60%;
+    /*width: 91%;*/
+    /*height: 60%;*/
+    display: inline-block;
+    width: 78%;
+    margin: 0 auto;
+    box-shadow: 1px 24px 43px #333;
 }
 
+figcaption{
+    background-color: #fff;
+    width: 78%;
+    padding: 6% 1%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px 24px 43px #333;
+    font-family: Punktype;
+}
 .pics .container p{
     font-family: cursive;
     text-align: left;
@@ -109,7 +123,7 @@ figcaption{
 .box {
     position: relative;
     box-sizing: border-box;
-    width: 750px;
+    width: 900px;
     height: 577px;
     right: 700px;
     margin: 0 auto;
@@ -118,17 +132,44 @@ figcaption{
 
     transition: all 0.7s;
 }
-.caption {
+.box:before {
+    content: 'menu';
+    text-transform: uppercase;
+    font-family: JELLYBELLY,serif;
+    color: rgba(244, 109, 125, 0.80);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    top: 13px;
+    right: 220px;
+    padding: 10px;
     background: linear-gradient(
             rgba(246, 245, 243, 0.7),
             rgba(246, 245, 243, 0.7));
+    text-shadow: black 0.2em 0.2em 0.2em;
+    letter-spacing: 2px;
+    font-family: JELLYBELLY;
+    font-size: 4rem;
+    font-weight: 600;
+    transition: all 0.45s;
+
+}
+.box:hover {
+    padding-left: 400px;
+}
+.box:hover:before {
+    right: -300px;
+}
+.caption {
+    background: linear-gradient(
+            rgba(246, 185, 174, 0.7),
+            rgba(183, 248, 255, 0.7));
     height: 100%;
     padding: 15px 20px 0 0;
 }
 ul {
     list-style: none;
-    margin: 0 20px;
-    padding: 0;
+    margin: 0 9px;
+    padding: 1px;
+    text-align: right;
 }
 
 ul li {
@@ -185,7 +226,8 @@ h1 a{
     font-size: 55px;
     text-transform: uppercase;
     color: rgba(171, 212, 244, 0.79);
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    /*text-shadow:  1px 24px 43px #333;;*/
 
 }
 
@@ -247,7 +289,7 @@ nav ul li a{
     font-family: JELLYBELLY,serif;
     font-size: 3em;
     color: rgba(244, 109, 125, 0.80);
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.2em 0.2em 0.2em;
 
 
 }
@@ -331,5 +373,182 @@ nav ul li a{
     animation-iteration-count: 1;
 }
 
+
+@media screen and (max-width: 1600px ) {
+    main {
+        width: 100%;
+        height: 520px;
+    }
+    .box:before {
+        margin-right: -69%;
+    }
+    .caption{
+        margin: 0 90px;
+    }
+    .box:before, .menu, .caption {
+        width: 64%;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+        line-height: 30px;
+        margin-left: 131px;
+        margin-top: 10px;
+    }
+    nav ul li a, h1{
+        font-size: 3em;
+    }
+    .hvr-pulse-grow {
+        display: block;
+    }
+
+    h1 a{
+        margin-left: 114px;
+
+    }
+}
+
+@media screen and (max-width: 1024px ) {
+
+    main {
+        width: 100%;
+        height: 520px;
+    }
+    #top{
+        width: 5%;
+        margin-top: -4%;
+    }
+    #top a{
+        font-size: 1.5em;
+
+    }
+    .box:before {
+        right: -20%;
+        width: 61%;
+    }
+    p {
+        font-family: Punktype;
+        position: fixed;
+        left: 12%;
+        top: -12%;
+        font-size: 12rem;
+        width: 41%;
+        padding: 7%;
+        border: hidden;
+        bottom: -110px;
+        text-transform: uppercase;
+        color: rgba(244, 109, 125, 0.80);
+        text-shadow: black 0.2em 0.2em 0.2em;
+    }
+
+    .box:before, .menu, .caption {
+        position: absolute;
+        margin-left: 9%;
+    }
+    h1{
+        text-align: right;
+}
+
+    .box:before{
+        margin-right: -18%;
+    }
+    .pics {
+         width: 70%;
+         margin: -46% 14%;
+     }
+}
+
+@media screen and (max-width: 960px){
+    .box:before {
+        margin-right: -22%;
+    }
+    p{
+        font-size: 9rem;
+    }
+    ul li a{
+        display: flex;
+        font-size: 2em;
+    }
+    nav ul li {
+        display: block;
+        padding: 10px;
+        line-height: 30px;
+        margin-left: 131px;
+        margin-top: 10px;
+    }
+
+    nav ul li a, h1{
+        font-size: 2em;
+    }
+    .hvr-pulse-grow {
+        display: block;
+    }
+
+    h1 a{
+        margin-left: 114px;
+        font-size: 44px;
+    }
+    .pics {
+
+        width: 98%;
+        margin: -51% 0%;
+    }
+    .pics .container img {
+
+        width: 90%;
+    }
+    figcaption{
+        width: 88%;
+    }
+    .pics .container p{
+        width: 64%;
+    }
+    .pics>.container>.text{
+        font-size: 1em;
+        font-family: cursive;
+        color: #1E1917;
+    }
+
+}
+
+
+@media screen and (max-width: 640px){
+
+    p{
+        font-size: 8rem;
+        top:0;
+        left: 7%;
+    }
+    .pics {
+        width: 90%;
+        margin: -75% 5%;
+    }
+    .pics .container img {
+
+        width: 100%;
+    }
+    figcaption{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    p{
+        font-size: 7rem;
+    }
+    .pics {
+        width: 98%;
+        margin: -98% 0%;
+    }
+}
+@media screen and (max-width: 320px){
+    p{
+        font-size: 5rem;
+        top: 8%;
+    }
+}
 
 

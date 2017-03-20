@@ -15,7 +15,8 @@ body{
     background-image:url("img/web-design-concept-with-drawings_1134-77.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 85%;
+    background-position: 50% 77%;
+
 }
 
 
@@ -34,7 +35,7 @@ main{
 .box {
     position: relative;
     box-sizing: border-box;
-    width: 750px;
+    width: 900px;
     height: 577px;
     right: 700px;
     margin: 0 auto;
@@ -44,16 +45,17 @@ main{
     transition: all 0.7s;
 }
 .caption {
-background: linear-gradient(
-rgba(246, 245, 243, 0.7),
-rgba(246, 245, 243, 0.7));
+    background: linear-gradient(
+            rgba(246, 185, 174, 0.7),
+            rgba(183, 248, 255, 0.7));
     height: 100%;
     padding: 15px 20px 0 0;
 }
 ul {
     list-style: none;
-    margin: 0 20px;
-    padding: 0;
+    margin: 0 9px;
+    padding: 1px;
+    text-align: right;
 }
 
 ul li {
@@ -87,12 +89,12 @@ ul li a:hover {
     color: rgba(244, 109, 125, 0.80);
     text-shadow: black 0.1em 0.1em 0.2em;
     top: 13px;
-    right: 91px;
+    right: 220px;
     padding: 10px;
     background: linear-gradient(
             rgba(246, 245, 243, 0.7),
             rgba(246, 245, 243, 0.7));
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: black 0.2em 0.2em 0.2em;
     letter-spacing: 2px;
     font-family: JELLYBELLY;
     font-size: 4rem;
@@ -128,7 +130,7 @@ h1 a{
     font-size: 55px;
     text-transform: uppercase;
     color: rgba(171, 212, 244, 0.79);
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.2em 0.2em 0.2em;
 
 }
 
@@ -177,16 +179,16 @@ p{
     position: fixed;
     left: 306px;
     font-size: 220px;
-    border: double;
+    /*border: double;*/
     width: 500px;
     padding: 31px;
-    border-width: 40px;
-    border-style: double;
-    border-radius: 50%;
+    /*border-width: 40px;*/
+    /*border-style: double;*/
+    /*border-radius: 50%;*/
     bottom: -110px;
     text-transform: uppercase;
     color: rgba(244, 109, 125, 0.80);
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.2em 0.2em 0.2em;
 
 }
 nav ul li{
@@ -207,7 +209,7 @@ nav ul li a{
     font-family: JELLYBELLY,serif;
     font-size: 3em;
     color: rgba(244, 109, 125, 0.80);
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.2em 0.2em 0.2em;
 
 
 }
@@ -289,6 +291,134 @@ nav ul li a{
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
+
+@media screen and (max-width: 1600px ) {
+    main {
+        width: 100%;
+        height: 610px;
+    }
+    .box:before {
+        margin-right: -69%;
+    }
+    .caption{
+    margin: 0 90px;
+}
+    .box:before, .menu, .caption {
+        width: 64%;
+    }
+
+nav ul li {
+        display: block;
+        padding: 10px;
+        line-height: 30px;
+        margin-left: 131px;
+        margin-top: 10px;
+    }
+    nav ul li a, h1{
+        font-size: 3em;
+    }
+    .hvr-pulse-grow {
+        display: block;
+    }
+
+    h1 a{
+        margin-left: 114px;
+
+    }
+}
+
+@media screen and (max-width: 1024px ) {
+
+    main {
+        width: 100%;
+        height: 610px;
+    }
+    .box:before {
+        right: -20%;
+        width: 61%;
+    }
+    p {
+        font-family: Punktype;
+
+        position: fixed;
+        left: 12%;
+        top: -12%;
+        font-size: 12rem;
+        width: 41%;
+        padding: 7%;
+        border: hidden;
+        bottom: -110px;
+        text-transform: uppercase;
+        color: rgba(244, 109, 125, 0.80);
+        text-shadow: black 0.2em 0.2em 0.2em;
+    }
+
+    .box:before, .menu, .caption {
+        position: absolute;
+        margin-left: 9%;
+
+
+    }
+
+    .box:before{
+        margin-right: -18%;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .box:before {
+        margin-right: -22%;
+    }
+    p{
+        font-size: 9rem;
+    }
+     ul li a{
+         display: flex;
+         font-size: 2em;
+     }
+    nav ul li {
+        display: block;
+        padding: 10px;
+        line-height: 30px;
+        margin-left: 131px;
+        margin-top: 10px;
+    }
+
+    nav ul li a, h1{
+        font-size: 2em;
+    }
+    .hvr-pulse-grow {
+        display: block;
+    }
+
+    h1 a{
+        margin-left: 41%;
+        font-size: 44px;
+    }
+
+}
+@media screen and (max-width: 640px){
+
+    p{
+        font-size: 8rem;
+        top:0;
+        left: 7%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    p{
+        font-size: 7rem;
+    }
+}
+@media screen and (max-width: 320px){
+    p{
+        font-size: 5rem;
+        top: 8%;
+    }
 }
 
 
