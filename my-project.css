@@ -103,7 +103,7 @@ ul li a:hover {
 
 }
 .box:hover {
-    padding-left: 400px;
+    padding-left: 280px;
 }
 .box:hover:before {
     right: -300px;
@@ -369,6 +369,9 @@ nav ul li {
 @media screen and (max-width: 960px){
     .box:before {
         margin-right: -22%;
+    }
+    .box:hover {
+        padding-left: 411px;
     }
     p{
         font-size: 9rem;
